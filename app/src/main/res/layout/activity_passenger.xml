@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Passenger">
+
+    <TextView
+        android:id="@+id/tvPassAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="TextView"
+        android:textColor="#9C27B0"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/buttonAllPass4"
+        android:layout_width="206dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="20dp"
+        android:width="200dp"
+        android:height="100dp"
+        android:text="I wont come tomorrow"
+        app:layout_constraintEnd_toEndOf="@+id/buttonAllPass2"
+        app:layout_constraintStart_toStartOf="@+id/buttonAllPass2"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAllPass2" />
+
+    <EditText
+        android:id="@+id/etBusId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter BusId"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#00BCD4"
+        app:layout_constraintEnd_toEndOf="@+id/buttonAllPass4"
+        app:layout_constraintStart_toStartOf="@+id/buttonAllPass4"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAllPass4" />
+
+    <TextView
+        android:id="@+id/textViewMain2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="68dp"
+        android:text="Passenger MENU"
+        android:textColor="#2196F3"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAllPass2"
+        android:layout_width="206dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="52dp"
+        android:width="200dp"
+        android:height="100dp"
+        android:text="I will come tomorrow"
+        app:layout_constraintEnd_toEndOf="@+id/textViewMain2"
+        app:layout_constraintStart_toStartOf="@+id/textViewMain2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMain2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/textViewMain2"
+        app:layout_constraintStart_toStartOf="@+id/textViewMain2"
+        app:layout_constraintTop_toBottomOf="@+id/etBusId">
+
+        <Button
+            android:id="@+id/btnJoinBus"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_marginRight="20dp"
+            android:width="200dp"
+            android:height="100dp"
+            android:gravity="center"
+            android:onClick="joinBus"
+            android:text="Join Bus" />
+
+        <Button
+            android:id="@+id/buttonAllPass3"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="10dp"
+            android:width="200dp"
+            android:height="100dp"
+            android:onClick="deregister"
+            android:text="deregister" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
